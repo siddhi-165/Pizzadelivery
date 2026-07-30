@@ -1,0 +1,158 @@
+.navbar{
+    width:100%;
+    padding:15px 6%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#e63946;
+    font-size:38px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:22px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e63946;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.cart-button{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#e63946;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-size:30px;
+}
+
+.cart-button span{
+    position:absolute;
+    top:8px;
+    right:10px;
+    background:white;
+    color:#e63946;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.user-name{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:700;
+    font-size:20px;
+    white-space:nowrap;
+}
+
+.login-btn,
+.register-btn,
+.logout-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:#e63946;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.logout-btn:hover{
+    background:#cf2335;
+}
+
+@media(max-width:1200px){
+
+    .navbar{
+        justify-content:center;
+        gap:20px;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        order:2;
+    }
+
+    .nav-right{
+        justify-content:center;
+        width:100%;
+        order:3;
+    }
+}
+
+@media(max-width:768px){
+
+    .logo{
+        font-size:28px;
+    }
+
+    .nav-links{
+        gap:18px;
+    }
+
+    .nav-links a{
+        font-size:18px;
+    }
+
+    .login-btn,
+    .register-btn,
+    .logout-btn{
+        padding:10px 20px;
+        font-size:16px;
+    }
+
+    .cart-button{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+
+    .user-name{
+        font-size:16px;
+    }
+}

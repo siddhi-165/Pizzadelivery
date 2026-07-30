@@ -1,0 +1,192 @@
+/* Floating Cart Button */
+
+.floating-cart{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+
+    width:70px;
+    height:70px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#e63946;
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:1000;
+}
+
+.floating-cart span{
+    position:absolute;
+    top:-5px;
+    right:-5px;
+
+    width:24px;
+    height:24px;
+
+    background:white;
+    color:#e63946;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* Overlay */
+
+.cart-overlay{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:999;
+}
+
+/* Cart Panel */
+
+.cart-panel{
+    position:fixed;
+
+    top:0;
+    right:-420px;
+
+    width:420px;
+    height:100vh;
+
+    background:white;
+
+    transition:.35s;
+
+    z-index:1001;
+
+    overflow-y:auto;
+
+    box-shadow:-10px 0 25px rgba(0,0,0,.2);
+
+    padding:25px;
+}
+
+.cart-panel.open{
+    right:0;
+}
+
+/* Header */
+
+.cart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.cart-header h2{
+    margin:0;
+}
+
+.cart-header button{
+    border:none;
+    background:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* Empty */
+
+.empty-cart{
+    text-align:center;
+    font-size:22px;
+    margin-top:100px;
+    color:#777;
+}
+
+/* Cart Item */
+
+.cart-item{
+    border-bottom:1px solid #eee;
+    padding:20px 0;
+}
+
+.cart-item-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.cart-item img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:15px;
+    flex-shrink:0;
+}
+
+.cart-item-info{
+    flex:1;
+}
+
+.cart-item-info h3{
+    margin:0;
+    font-size:20px;
+}
+
+.cart-item-info p{
+    margin:8px 0;
+    color:#666;
+    font-size:18px;
+}
+
+/* Quantity */
+
+.qty{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.qty button{
+    width:34px;
+    height:34px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#e63946;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.qty span{
+    font-size:18px;
+    font-weight:700;
+}
+
+/* Total */
+
+.cart-total{
+    text-align:right;
+
+    margin-top:30px;
+
+    font-size:30px;
+
+    color:#e63946;
+
+    font-weight:bold;
+}
